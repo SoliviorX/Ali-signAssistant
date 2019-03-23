@@ -1,0 +1,63 @@
+@import '../memberCard/memberCard.acss';
+
+.toshow{
+    visibility: visible;
+}
+.tohidden{
+    visibility: hidden;
+}
+
+/* header */
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* border-bottom: 1rpx solid #ABAFBA; */
+  background: white;
+  z-index: 1;
+}
+.header-top {
+  /* height: 200rpx; */
+  /* width: 100%; */
+  border-bottom: 1rpx solid #ABAFBA;
+  border-radius: 5rpx;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  padding: 0 24rpx;
+}
+.selectAll {
+  display: flex;
+  align-items: center
+}
+.select-desc {
+  margin-left: 10rpx;
+}
+.send {
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: white;
+  background: #F03C14;
+  border-radius: 5rpx;
+  text-align: center;
+}
+
+/* list */
+.list {
+  margin-top: 250rpx;
+}
+.list-item {
+  padding: 18rpx 24rpx;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

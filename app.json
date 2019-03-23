@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/mainpage/mainpage",
+    "pages/index/index",
+    
+    "pages/shopdetail/shopdetail",
+    "pages/todos/todos",
+    "pages/reserlogin/reserlogin",
+    "pages/errorview/index",
+    "pages/error-view/index",
+    "pages/memberCard/memberCard",
+    "pages/login/login",
+    "pages/sendMessage/sendMessage"
+  ],
+  "window": {
+    "defaultTitle": "签到",
+    "titleBarColor": "#f1b323"
+  }
+}

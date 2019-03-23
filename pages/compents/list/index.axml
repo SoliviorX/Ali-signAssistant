@@ -1,0 +1,33 @@
+<template name="List">
+    <scroll-view scroll-y>
+        <view>
+            <view >
+                <block a:if={{header}}>
+                    <view >{{header}}</view>
+                </block>
+                <view a:if={{data}}>
+                    <block a:for={{data}}>
+                        <view 
+                            onTap="{{onItemTap}}"
+                            data-index={{index}} >
+                           
+                            <view class="item-whole">
+                              
+                                
+                                <image style="width:100%;margin-top:20px " src="/image/giftbg.png" mode="" />
+                                <image class="header-pic" a:if={{item.thumb}}  src="{{item.thumb}}"  />
+                                <text style=" font-size: 25rpx; margin-right:-20px;margin-top:-100px">{{item.title}}</text>
+                                <text style=" font-size: 20rpx; float:right; margin-right:20px; margin-top:-10px">影响度：{{item.hot}}</text>
+                                <view style=" width: 30rpx; height: 30rpx;"   a:if={{item.extra}}  >{{item.extra}}</view>
+                                 <view a:if={{item.arrow}}  />
+                            
+
+
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</template>

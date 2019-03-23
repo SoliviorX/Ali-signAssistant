@@ -1,0 +1,199 @@
+.img-circle {
+    border-radius:50%;
+	overflow:hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+.avatar {
+    width: .8rem;
+    height: .8rem;
+    background-size: .6rem auto;
+    -webkit-background-size: .6rem auto;
+}
+.img-upload {
+    width: 80%;
+    height: 80%;
+    background-size: .6rem auto;
+    -webkit-background-size: .6rem auto;
+}
+.merchant-name{
+	font-size: 0.16rem;
+	line-height: 0.2rem;
+	color: #000;
+	padding: 0rem 0rem 0.2rem;
+	font-weight: 300;
+	width: 100%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	text-align: center;
+	
+}
+.merchant-logo {
+    text-align: center;
+    font-size: 30px;
+    padding: 0.2rem 0rem 0.15rem;
+    color: #fb6165;
+}
+.am-button.red {
+    background-color: #fb6165;
+}
+.am-button.red:active {
+    color: rgba(255, 255, 255, 0.6);
+	background-color: #d95559;
+}
+.am-button.red_outline {
+	color: #fb6165;
+	border: .01rem solid #fb6165;
+	background-color: #fff;
+}
+.am-button.red_outline:active {
+	color: rgba(251, 97, 101, 0.6);
+	border-color: rgba(251, 97, 101, 0.6);
+}
+.am-button.green {
+    background-color: #1AAD19;
+}
+.am-button.green:active {
+    color: rgba(255, 255, 255, 0.6);
+	background-color: #179B16;
+}
+.am-button.green_outline {
+	color: #1aad19;
+	border: .01rem solid #1aad19;
+	background-color: #fff;
+}
+.am-button.green_outline:active {
+	color: rgba(26, 173, 25, 0.6);
+	border-color: rgba(26, 173, 25, 0.6);
+}
+.amountdiv  {
+    font-size: .4rem!important;
+    line-height: .5rem!important;
+	height: .5rem!important;
+}
+.amountdiv input  { /* WebKit browsers */ 
+    font-size: .4rem!important;
+    line-height: .5rem!important;
+	height: .5rem!important;
+} 
+
+.amountdiv input::-webkit-input-placeholder { /* WebKit browsers */ 
+    font-size: .4rem!important;
+    line-height: .5rem!important;
+	height: .5rem!important;
+} 
+.amountdiv input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+    font-size: .4rem!important;
+    line-height: .5rem!important;
+	height: .5rem!important;
+} 
+.amountdiv input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+    font-size: .4rem!important;
+    line-height: .5rem!important;
+	height: .5rem!important;
+} 
+.amountdiv input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+    font-size: .4rem!important;
+    line-height: .5rem!important;
+	height: .5rem!important;
+}
+.copyright {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+.copyright a {
+  color: #888!important;
+}
+.copyright .link {
+  color: #fb6165!important;
+}
+.antui_navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+}
+.antui_tabbar {
+    font-size: 14px;
+    color: #888;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    background-color: #f7f7fa;
+}
+.antui_tabbar a {
+  color: #61749B;
+}
+.padding-bottombar {
+	padding-bottom: .60rem !important;
+}
+
+.padding-y10 {
+    padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
+.marginbottom80 {
+    padding-bottom: 80px;
+}
+.marginbottom100 {
+    padding-bottom: 100px;
+}
+.marginbottom60 {
+    padding-bottom: 50px;
+}
+.padding10 {
+    padding: 10px;
+}
+.am-icon:not([am-version]).result.post {
+    background-image: url(img/icon-post.png);
+}
+.am-icon:not([am-version]).result.gift {
+    background-image: url(img/icon-gift.png);
+}
+.am-icon:not([am-version]).result.money {
+    background-image: url(img/icon-money.png);
+}
+.am-icon:not([am-version]).result.order {
+    background-image: url(img/icon-order.png);
+}
+.am-icon:not([am-version]).result.checkin {
+    background-image: url(img/icon-checkin.png);
+}
+.am-icon:not([am-version]).result.account {
+    background-image: url(img/icon-account.png);
+}
+.am-icon:not([am-version]).result.wechatpay {
+    background-image: url(img/wechatpay.svg);
+}
+.border-top {
+    border-top: .01rem solid #f6f6f7;
+}
+.am-bubble:not([am-version]).gift {
+    width: .55rem!important;
+    height: .3rem!important;
+    line-height: .3rem!important;
+	color: #fb6165!important;
+    background-color: #fff!important;
+}
+.giftbg {
+    background-image:url('img/giftbg.png')!important;
+	background-repeat:no-repeat!important;
+	background-size:100% 100%!important;
+	color:#fff!important;
+}
+.gifttext {
+	color:#fff!important;
+}
+.circle-border{
+    border: .02rem solid #FFFFFF;
+    border-radius: 50%;
+}

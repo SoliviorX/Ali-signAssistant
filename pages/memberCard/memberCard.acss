@@ -1,0 +1,114 @@
+page {
+  background: #F5F5F5;
+}
+.container {
+  width: 100%;
+  background: #F5F5F5;
+}
+.toshow{
+    visibility: visible;
+}
+.tohidden{
+    visibility: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  border-bottom: 1rpx solid #ABAFBA;
+  /* margin-bottom: 20rpx; */
+  background: white;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-left image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.time {
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 1rpx solid #717171;
+  border-radius: 10rpx;
+  margin: 0 5rpx;
+  text-align: center;
+}
+.header-right {
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: #F03C14;
+  font-size: 26rpx;
+  color: white;
+  border-radius: 5rpx;
+  text-align: center;
+}
+
+/* 无数据 */
+.no-notice{
+  padding-top:130px;
+}
+.no-notice image{
+  display: block;
+  width: 205rpx;
+  height: 269rpx;
+  margin: 0 auto 50rpx auto;
+  text-align: center
+}
+.no-notice-des{
+  font-size: 26rpx;
+  color:#6c6b6b;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500
+}
+/* 有数据时列表 */
+.list {
+  box-sizing: border-box;
+  margin-top: 110rpx;
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: white;
+  box-sizing: border-box;
+  width: 93.6%;
+  height: 140rpx;
+  margin: 0 24rpx 24rpx 24rpx;
+  padding-left: 24rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  border-radius: 10rpx;
+}
+.item-header {
+  font-size: 30rpx;
+  color: black;
+}
+.item-date,
+.item-id {
+  font-size: 24rpx;
+  color: #919191;
+}
+
+.goTop {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50rpx;
+  left: 30rpx;
+  /* background: rgba(0,0,0,.3) */
+}

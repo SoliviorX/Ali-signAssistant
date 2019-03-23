@@ -1,0 +1,91 @@
+<import src="../compents/list/index.axml" />
+<view class="page">
+    <form onSubmit="formSubmit" onReset="onReset" report-submit="true" >
+      <view style= "width: 100%;">
+        <view class="a-pic-view">
+          <image onTap="loadpage" class="a-pic" mode="scaleToFill" src="{{head_src}}"/>
+        </view>
+        <view style="text-align: center;margin-top:8px;" class="title">{{title}}</view>
+        <view style="text-align: center;margin-top:8px;" class="tip">{{tip}}</view>
+        <view style="text-align: center;margin-top:8px;" class="status">{{status}}</view>
+        <view style="text-align: center;margin-top:8px;color: #888;">{{total_bean}}</view>
+        <view style="text-align: center;margin-top:8px;margin-bottom:10px;color: #888;">{{num}}</view>
+        <view class="check_view">
+        <view class="check_info" style="display: {{index}};" >{{check_position}}</view>
+        <view style="text-align: center;margin-top:8px;font-size: 20rpx;">{{alipay_uid}}</view>
+        <view  style="text-align: center;">
+          <image class="qcode_src"  style="display: {{index_qrcode}};" src="{{qcode_src}}" mode="scaleToFill" />
+        </view>
+   
+   </view>
+
+      <view class="border-top"  style="display: {{index_line}};">
+      </view>
+
+      <view class="card_view">
+          <button class="card_src"  style=" background-image:url({{card_src}});display: {{card_index}};"  mode="scaleToFill" onTap="SharePacket" type="none"  formType="submit"/>
+      </view>
+
+      <view style="text-align: center;margin-top:10px;font-size: 20rpx;">{{card_info}}</view>
+  
+      <view style="width: 100%;">
+
+        <scroll-view scroll-y>
+          <view>
+              <view >
+                  <view a:if={{data}}>
+                      <block a:for={{data}}>
+                          <view onTap="{{onItemTap}}" data-index={{index}} >
+                              <view class="">
+                                <button class="varch_src"  style=" background-image:url({{varch_src}});"  mode="scaleToFill" onTap="SharePacket" type="none"  formType="submit">{{item.ActivityName}}</button>
+                              </view>
+                          </view>
+                      </block>
+                  </view>
+              </view>
+          </view>
+        </scroll-view>
+      </view>
+
+      <view class="but-check">
+        <checkbox-group onChange="onChange" >
+          <label class="checkbox" a:for="{{items}}" >
+            <checkbox style="zoom:60%;" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+            <text class="checkbox-text">{{item.value}}</text>
+          </label>
+        </checkbox-group>
+      </view>
+
+      <view class="information">
+      <!-- {{info}}                
+        <text style="color:#2E2E2E">{{info1}}</text> -->
+      </view>
+
+    </form>
+</view>
+
+ 
+    <!-- <image class="quan" src="/image/giftbg.png" onTap="SharePacket" mode="scaleToFill"></image>
+
+    <view class="left-pic">
+      <image class="left-header" src="{{left_head}}" mode="scaleToFill" />
+    </view>
+
+    <view class="txt-title">
+      <text>{{txt_title}}</text>
+      <view class="txt-content">
+        <text>{{txt_content}}</text>
+      </view>
+    </view> 
+
+    <view class="get-share">
+     <text class="btn-get" onTap="SharePacket">去领取</text>  
+    </view>  -->
+
+  <!-- <radio-group class="radio-group" onChange="onChange">
+  <label class="radio" a:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group> -->
+
+      

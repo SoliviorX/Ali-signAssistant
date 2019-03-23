@@ -1,0 +1,5 @@
+<view class='contain'>
+  <image class='icon' src='../../image/club.png'></image>
+  <!-- button属性withCredentials='true' bindgetuserinfo="bindGetUserInfo"啥意思 -->
+  <button class='btnlogin' open-type="getUserInfo" onTap="bindGetUserInfo">支付宝用户快速登录</button>
+</view>

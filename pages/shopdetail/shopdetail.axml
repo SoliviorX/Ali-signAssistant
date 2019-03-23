@@ -1,0 +1,5 @@
+<view style= "width: 100%;text-align: center;">
+<image  style="width: 80px; height: 80px;text-align: center;margin-top:30px" src="{{imgsrc}}"/>
+  <view style="text-align: center;">{{title}}</view>
+  <view style="text-align: center;">俱乐部热度:{{hot}}</view>
+</view>

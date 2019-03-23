@@ -1,0 +1,42 @@
+<view class="container {{toshow}}">
+  <view class="top">
+    <view class="header-top">
+      <textarea placeholder="Please input something" name="textarea" auto-height="true" onBlur="textInput" />
+    </view>
+    <view class="header-bottom">
+      <label class="selectAll">
+        <checkbox onChange="selectall"/>
+        <text class="select-desc">全选</text>
+      </label>
+      <view class="send" onTap="sendMessage">发送短信</view>
+    </view>
+  </view>
+
+  <view class="list">
+    <view a:if="{{memberInfo.length == 0 || memberInfo == undefined}}" class="no-notice">
+      <image src="../../image/icon_blank_03.png"/>
+      <view class="no-notice-des">暂无数据</view>
+    </view>
+    <view a:else>
+      <checkbox-group onChange="onChange" >
+        <label class="checkbox list-item" a:for="{{memberInfo}}" a:key="{{index}}">
+          <view class="checkbox-left">
+            <view class="item-header">
+              姓名：{{item.Name}}
+            </view>
+            <view class="item-id">
+              手机号：{{item.Phone}}
+            </view>
+          </view>
+          <checkbox checked="{{item.checked}}" value="{{item.Name+item.Phone}}"/>
+        </label>
+      </checkbox-group>
+     
+    </view>
+  </view>
+
+  <view hidden="{{!floorstatus}}">
+    <image src="../../image/top.jpg" class="goTop" onTap="goTop"/>
+  </view>
+
+</view>

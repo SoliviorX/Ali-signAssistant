@@ -1,0 +1,30 @@
+page {
+  flex: 1;
+  display: flex;
+  background: white;
+}
+
+.contain {
+  width: 100%;
+}
+
+.icon {
+  width: 194rpx;
+  height: 194rpx;
+  margin: 150rpx auto 200rpx auto;
+  border-radius: 50%;
+  display: block;
+}
+
+.btnlogin {
+  display: block;
+  width: 652rpx;
+  height: 84rpx;
+  background: #128FEB;
+  color: white;
+  margin: 0 auto;
+  font-size: 30rpx;
+  line-height: 84rpx;
+  text-align: center;
+  border-radius: 10px;
+}

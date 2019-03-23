@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="header">
+    <view class="header-left">
+      <image src="../../image/tabBarT.png"/>
+      <view class="time" onTap="getStartTime">{{StartTime}}</view>
+      <view> — </view>
+      <view class="time" onTap="getEndTime">{{EndTime}}</view>
+    </view>
+    <view class="header-right" onTap="sendMessage">去发短信</view>
+  </view>
+
+  <view class="list {{toshow}}">
+    <view a:if="{{memberInfo.length == 0 || memberInfo == undefined}}" class="no-notice">
+      <image src="../../image/icon_blank_03.png"/>
+      <view class="no-notice-des">暂无数据</view>
+    </view>
+    <view a:else class="list-item" a:for="{{memberInfo}}" a:key="{{index}}">
+      <view class="item-header">
+        {{item.Name}} | {{item.Phone}}
+      </view>
+      <view class="item-date">
+        创建时间：{{item.AddTime}}
+      </view>
+      <view class="item-id">
+        ID：{{item.AliCardId}}
+      </view>
+    </view>
+  </view>
+  <view hidden="{{!floorstatus}}">
+    <image src="../../image/top.jpg" class="goTop" onTap="goTop"/>
+  </view>
+  <!-- <image src="../../image/top.jpg" class="goTop" hidden='{{!floorstatus}}' onTap="goTop"/> -->
+</view>

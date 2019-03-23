@@ -1,0 +1,63 @@
+
+<view class='contain'>
+
+  <view class='header'>
+      <view class='header-left' onTap='openLock' hover-class='header-bg'>
+        <image src='../../image/png-icon-scan-png.png'></image>
+        <text>扫一扫</text>
+      </view>
+      <view class='header-left' onTap='memberCard' hover-class='header-bg'>
+        <image src='../../image/headerTwo.png'></image>
+        <text>联名会员卡</text>
+      </view>
+  </view>
+
+  <view class='moddle'>
+
+    <view class='background' hover-class='middle-bg' onTap='leaseholdBill'>
+      <view class='moddle-contain'>
+        <view class='moddle-left'>
+          <image src='../../image/dingdan2x.png'></image>
+          <text>客户列表</text>
+        </view>
+        <view class='moddle-right'>
+          <image src='../../image/Path2x.png'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='background' hover-class='middle-bg' onTap='guideUse'>
+      <view class='moddle-contain'>
+        <view class='moddle-left'>
+          <image src='../../image/shiyong2x.png'></image>
+          <text>使用指南</text>
+        </view>
+        <view class='moddle-right'>
+          <image src='../../image/Path2x.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='footer'>
+    <view class='footer-header'>
+      <text>更多功能</text>
+    </view>
+    <view class='footer-foot'>
+      <view class='foot-foot-left' hover-class='middle-bg' open-type="contact">
+        <contact-button tnt-inst-id="" scene="" size="22" icon="../../image/lianxi2x.png" />
+        <!-- <image src='../../image/lianxi2x.png'></image> -->
+        <text>联系客服</text>
+      </view>
+      <view class='footer-foot-right' hover-class='middle-bg'  onTap='Cooperation'>
+        <image src='../../image/hezuo2x.png'></image>
+        <text>合作开荒</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='button'>
+    <lifestyle publicId="" />
+  </view>
+
+</view>
